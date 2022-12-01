@@ -1,0 +1,96 @@
+nav ul{
+    display:flex;
+    justify-content: space-around; 
+    list-style-type: none;
+}
+@media screen and (min-width:1250px) {
+    ul:nth-child(3) li:first-child {
+        color: blue;
+}}
+@media screen and (min-width:1250px) {
+    ul:nth-child(3) li:nth-child(2) {
+        color: green;
+}}
+
+@media screen and (max-width:1250px) {
+    ul:nth-child(5) li:nth-child(1) {
+        color: orange;
+}}
+@media screen and (max-width:1250px) {
+    ul:nth-child(5) li:nth-child(2) {
+        color: red;
+}}
+@media screen and (max-width:1000px) {
+    ul:nth-child(7) li:nth-child(1) {
+        font-style: bold ;
+        text-decoration: underline;
+}}
+@media screen and (min-width:1250px) {
+    ul:nth-child(7) li:nth-child(2) {
+        font-style: italic ;
+        color: blue;
+}}
+@media screen and (max-width:800px) {
+    h2:nth-child(8) {
+        border: 1px solid black;
+        color: green;
+}}
+@media screen and (min-width:900px) {
+    h2:nth-child(8) {
+        border: 1px solid black;
+        color: green;
+}}
+@media screen and (min-width:900px) and (max-width:1250px) {
+    h2:nth-child(10), ul:nth-child(11)>li {
+        border: 1px solid black;
+        color: red;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1250px) {
+    h2:nth-child(10), ul:nth-child(11)>li {
+        border: 1px solid black;
+        color: red;
+    }
+}
+#exo6{
+    background-image: url(../images/tartine.jpg);
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+}
+@media screen and (max-width:900px) {
+    #exo6 {
+        height: 125px;
+        width: 125px;
+    }
+}
+@media print {
+    h2:nth-child(15) {
+        color: black;
+
+    }
+    #exo6, img{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px){
+    nav ul{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:1250px){
+    a{
+        font-size: 32px;
+    }
+
+}
+@media screen and (min-width:1250px){
+    a:hover{
+        color: green;
+    }
+}
+@media screen and (max-width:320px){
+    a:hover{
+        color: orange;
+    }
+}
